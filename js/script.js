@@ -18,13 +18,14 @@ const countdown = setInterval(function () {
     if (seconds > 0) {
         seconds--;
         countdownElem.innerText = seconds;
+        console.log(seconds);
     } else {
         clearInterval(countdown);
         console.log("BUON ANNO!");
         happyElem.innerText = "BUON ANNO!"
     }
     
-    console.log(seconds);
+    
      // Stampo in pagina il countdown
 }, 1000);
 
